@@ -34,15 +34,15 @@ function cycleValues($inputs, $inputKey, $thirdOperator = false)
             continue;
         }
 
-        $value = (int) trim($value);
-        $value2 = (int) trim($inputs[$inputKey]);
+        $value = (int) $value;
+        $value2 = (int) $inputs[$inputKey];
 
         if ($thirdOperator) {
             foreach ($inputs as $k => $v) {
                 if ($k === $inputKey || $k === $key) {
                     continue;
                 }
-                $value3 = (int) trim($v);
+                $value3 = (int) $v;
 
                 if ($value + $value2 + $value3 === 2020) {
                     echo sprintf('Values are %d and %d and %d', $value, $value2, $value3) . PHP_EOL;

@@ -10,7 +10,7 @@ class Utils
     {
         if ($argc && $argc > 1) {
             if (file_exists(realpath($argv[1]))) {
-                $input = file(realpath($argv[1]));
+                $input = file(realpath($argv[1]), FILE_IGNORE_NEW_LINES);
                 if (!$input) {
                     throw new RuntimeException('Failure upon file read!');
                 }

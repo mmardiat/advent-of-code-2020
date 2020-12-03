@@ -43,8 +43,5 @@ function findTrees(int $xStep, int $yStep, array $data) {
 
 function getCorrectLengthMapRow($mapRow, $xAxis)
 {
-    $mapRow = trim($mapRow);
-    $timesToExtendRow = ceil($xAxis / (strlen($mapRow) - 1));
-
-    return str_repeat($mapRow, $timesToExtendRow);
+    return str_repeat($mapRow, ceil($xAxis / (strlen($mapRow) - 1)));
 }

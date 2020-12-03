@@ -9,7 +9,6 @@ $inputs = Utils::getInput($argc, $argv);
 // First part
 $validPasswords = 0;
 foreach ($inputs as $input) {
-    $input = trim($input);
     $dataPieces = explode(' ', $input);
 
     $range = explode('-', $dataPieces[0]);
