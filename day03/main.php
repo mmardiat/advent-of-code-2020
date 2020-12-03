@@ -17,7 +17,7 @@ $c = findTrees(7, 1, $inputs);
 $d = findTrees(1, 2, $inputs);
 $answersMultiplied = $a * $b * $c * $d * $firstPartAnswer;
 
-echo 'Second part answer, trees encountered: ' . $answersMultiplied . PHP_EOL;
+echo 'Second part answer: ' . $answersMultiplied . PHP_EOL;
 
 function findTrees(int $xStep, int $yStep, array $data) {
     $xAxis = $xStep;
