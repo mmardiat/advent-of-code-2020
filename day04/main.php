@@ -37,11 +37,10 @@ foreach ($passports as $passportFields) {
 
 // First part
 echo 'Valid passport count is: ' . $validPassports . PHP_EOL;
+
+// Second part
 echo 'Validated passport count is: ' . $validatedPassports;
 
-/*
-hcl (Hair Color) - a # followed by exactly six characters 0-9 or a-f.
-*/
 function validatePassport(array $passportFields)
 {
     return rangeValidator($passportFields['byr'], 4, 1920, 2002) &&
