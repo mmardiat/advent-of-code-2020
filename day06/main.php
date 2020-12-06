@@ -6,8 +6,6 @@ use Classes\Utils;
 
 $inputs = Utils::getInput($argc, $argv);
 
-
-
 $groupAnswers = [];
 $groupAnswersAsString = [];
 $groupKey = 0;
